@@ -2,12 +2,12 @@
 %% Conversion from the original notebook file:
 %% Exercise 6.ipynb
 %%
-\documentclass[a4paper, 12pt]{article}
+\documentclass[11pt,english]{article}
 
 %% This is the automatic preamble used by IPython.  Note that it does *not*
 %% include a documentclass declaration. The documentclass is added at runtime
 %% to the overall document.
-\usepackage{fancyhdr}
+
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
@@ -118,45 +118,9 @@
 % Prevent overflowing lines due to urls and other hard-to-break entities.
 \sloppy
 
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
-\title{\bf Density Transformations \& ICA}
-\author{Xugang Zhou \\ Fangzhou Yang}
-\pagestyle{fancy}
-\lhead{{\bf Machine Intelligence 2 SS2013}}
-\rhead{Exercise 06}
-\renewcommand{\headrulewidth}{0.4pt}
-
 \begin{document}
-\begin{titlepage}
-\begin{center}
-\vfill
-\textsc{\LARGE Machine Intelligence 2}\\[1.5cm]
-\textsc{\Large Exercise 06}\\[0.5cm]
 
-\HRule \\[0.4cm]
-{\huge \bfseries \bf Density Transformations \& ICA}\\[0.4cm]
-\HRule \\[1.5cm]
-\begin{minipage}{0.4\textwidth}
-\begin{flushleft} \large
-\emph{Group Members:}\\
-Xugang \textsc{Zhou}\\
-Fangzhou \textsc{Yang}
-\end{flushleft}
-\end{minipage}
-\begin{minipage}{0.4\textwidth}
-\begin{flushright} \large
-\emph{Tutor:} \\
-Timm \textsc{Lochmann} \\
-\end{flushright}
-\end{minipage}
-\vfill
-{\large \today}\\
-\end{center}
-\end{titlepage}
-\thispagestyle{fancy}
-
-
-
+\section{Density Transformations \& ICA}
 
 \section{6.1 Density Transformations}
 
@@ -204,7 +168,7 @@ for i in range(500):
 
 plt.clf()
 plt.hist(z, bins=50, color='blue')
-plt.title('histogram of generated Variable X')
+plt.title('histogram of generated Variable Z')
 plt.show()
 
 plt.clf()
