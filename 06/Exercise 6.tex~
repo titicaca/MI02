@@ -123,7 +123,7 @@
 \author{Xugang Zhou \\ Fangzhou Yang}
 \pagestyle{fancy}
 \lhead{{\bf Machine Intelligence 2 SS2013}}
-\rhead{Exercise 06}
+\rhead{Exercise 05}
 \renewcommand{\headrulewidth}{0.4pt}
 
 \begin{document}
@@ -134,7 +134,7 @@
 \textsc{\Large Exercise 06}\\[0.5cm]
 
 \HRule \\[0.4cm]
-{\huge \bfseries Projection Methods: Principle Component Analysis}\\[0.4cm]
+{\huge \bfseries Density Transformations \& ICA}\\[0.4cm]
 \HRule \\[1.5cm]
 \begin{minipage}{0.4\textwidth}
 \begin{flushleft} \large
@@ -154,8 +154,6 @@ Timm \textsc{Lochmann} \\
 \end{center}
 \end{titlepage}
 \thispagestyle{fancy}
-
-
 
 
 \section{6.1 Density Transformations}
@@ -204,7 +202,7 @@ for i in range(500):
 
 plt.clf()
 plt.hist(z, bins=50, color='blue')
-plt.title('histogram of generated Variable X')
+plt.title('histogram of generated Variable Z')
 plt.show()
 
 plt.clf()
